@@ -26,7 +26,7 @@ py -3.11 -m venv venv
 venv\Scripts\activate
 
 # Install dependencies
-pip install mediapipe==0.10.9 opencv-python pyautogui
+pip install mediapipe==0.11 opencv-python pyautogui
 
 # Run
 python gesturetest.py
