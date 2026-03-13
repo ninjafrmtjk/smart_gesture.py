@@ -11,9 +11,10 @@ Built with **MediaPipe** + **OpenCV**, this project tracks your hand through a w
 ## ✨ Features
 
 - 🖱️ **Move cursor** — point with your index finger
-- 👆 **Single click** — pinch thumb and index finger
+- 👆 **Left click** — pinch thumb and index finger
 - ✌️ **Double click** — pinch twice quickly
-- 🖐️ **Scroll** — raise all four fingers, tilt hand up/down
+- 🤞 **Right click** — pinch thumb and middle finger
+- 🖐️ **Scroll** — raise all four fingers, move hand up/down
 - 📸 **Screenshot** — make a fist
 
 ---
@@ -22,21 +23,20 @@ Built with **MediaPipe** + **OpenCV**, this project tracks your hand through a w
 
 ```bash
 # Create virtual environment with Python 3.11
-
-# Open cmd
 py -3.11 -m venv venv
 venv\Scripts\activate
 
 # Install dependencies
-pip install mediapipe==0.10.9 opencv-python pyautogui
+pip install opencv-python mediapipe pyautogui numpy
 
-# Choose location of project
+# Navigate to project folder
 cd C:\...(project location)
 
 # Run
 python main.py
 ```
 
+> On first run, the hand landmark model (~11 MB) downloads automatically.
 > Press **Q** to quit.
 
 ---
@@ -45,6 +45,15 @@ python main.py
 
 - Python 3.11
 - Webcam
+
+---
+
+## 📁 Files
+
+```
+main.py       — gesture controller
+util.py       — geometry helpers (angle, distance)
+```
 
 ---
 
